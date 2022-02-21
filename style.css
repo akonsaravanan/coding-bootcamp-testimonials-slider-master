@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+/*  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: 100%;
+  background-image: url("images/pattern-bg.svg"),
+    url("images/pattern-quotes.svg"), url("images/pattern-curve.svg");
+  background-size: 300px, 80px, 200px;
+  background-repeat: no-repeat;
+  background-position: center 20%, center 60%, left bottom;
+  overflow-x: hidden !important;
+}
+.slider-container {
+  overflow-x: hidden !important;
+}
+.testimonialcard {
+  position: relative;
+}
+.card .contents {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 220px;
+  margin: 30px 0;
+}
+.profile-img {
+  margin: 30px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.desscription {
+  width: 300px;
+  padding: 0 35px;
+  padding-top: 35px;
+  text-align: center;
+  font-size: 15px;
+}
+.info {
+  font-weight: 300;
+  color: hsl(240, 7%, 47%);
+  line-height: 1.5;
+}
+.name {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.2em; */
+  font-weight: 700;
+  color: hsl(240, 38%, 20%);
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+}
+.role {
+  font-weight: 500;
+  color: hsl(240, 5%, 69%);
+}
+
+.card-two {
+  display: none;
+}
+
+.navigations img {
+  display: block;
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+}
+.navigations {
+  max-width: 70px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: white;
+  padding: 6px 6px;
+  border-radius: 12px;
+  color: black;
+  position: absolute;
+  top: 46%;
+  right: 50%;
+  transform: translate(50%);
+}
+/* Media Queries */
+@media only screen and (min-width: 768px) and (max-width: 994px) {
+  .card .contents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  .profile-img img {
+    width: 100%;
+    height: 300px;
+    margin: 30px 0;
+  }
+  .desscription {
+    width: 500px;
+    padding-left: 30px;
+    padding-top: 35px;
+    text-align: left;
+    font-size: 18px;
+  }
+  .info {
+    font-weight: 300;
+    color: hsl(240, 7%, 47%);
+    line-height: 1.6;
+  }
+  .navigations img {
+    width: 100%;
+    height: 15px;
+  }
+  .personal {
+    margin-left: 0;
+    text-align: left;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .role {
+    font-weight: 300;
+  }
+  .navigations {
+    top: 72%;
+    right: 32%;
+    transform: translate(50%);
+    box-shadow: 0px 1px 4px -1px rgb(99, 96, 96);
+  }
+
+  body {
+    background-image: url("images/pattern-bg.svg"),
+      url("images/pattern-quotes.svg"), url("images/pattern-curve.svg");
+
+    background-size: 405px, 100px, 321px;
+    background-position: right 50%, 15% 35%, left bottom;
+  }
+}
+@media only screen and (min-width: 994px) and (max-width: 1025px) {
+  .card .contents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  .profile-img img {
+    width: 100%;
+    height: 400px;
+    margin: 30px 0;
+  }
+  .desscription {
+    width: 700px;
+    /* height:400px; */
+    padding-left: 30px;
+    padding-top: 35px;
+    text-align: left;
+    font-size: 20px;
+  }
+  .info {
+    font-weight: 300;
+    color: hsl(240, 7%, 47%);
+    line-height: 1.6;
+  }
+  .navigations img {
+    width: 100%;
+    height: 15px;
+  }
+  .personal {
+    margin-left: 0;
+    text-align: left;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .role {
+    font-weight: 300;
+  }
+  .navigations {
+    top: 81%;
+    right: 30%;
+    transform: translate(50%);
+    box-shadow: 0px 1px 4px -1px rgb(99, 96, 96);
+  }
+
+  body {
+    background-image: url("images/pattern-bg.svg"),
+      url("images/pattern-quotes.svg"), url("images/pattern-curve.svg");
+    background-size: 505px, 100px, 450px;
+    background-position: right 50%, 15% 35%, left bottom;
+    /* position:fixed */
+  }
+}
+@media only screen and (min-width: 1026px) and (max-width: 1500px) {
+  .card .contents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  .profile-img img {
+    width: 100%;
+    height: 500px;
+    margin: 30px 0;
+  }
+  .desscription {
+    width: 700px;
+    /* height:400px; */
+    padding-left: 30px;
+    padding-top: 35px;
+    text-align: left;
+    font-size: 20px;
+  }
+  .info {
+    font-weight: 300;
+    color: hsl(240, 7%, 47%);
+    line-height: 1.6;
+  }
+  .navigations img {
+    width: 100%;
+    height: 20px;
+    border-radius: 20px;
+  }
+  .personal {
+    margin-left: 0;
+    text-align: left;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .role {
+    font-weight: 300;
+  }
+  .navigations {
+    top: 99%;
+    right: 40%;
+    transform: translate(50%);
+    box-shadow: 0px 1px 4px -1px rgb(99, 96, 96);
+  }
+
+  body {
+    background-image: url("images/pattern-bg.svg"),
+      url("images/pattern-quotes.svg"), url("images/pattern-curve.svg");
+    background-size: 605px, 100px, 650px;
+    background-position: 89% 50%, 15% 35%, left bottom;
+    /* position:fixed */
+  }
+}
